@@ -15,6 +15,7 @@ html {
     /*Primary*/
 
     --color-purple: hsl(259, 100%, 65%);
+    --color-dark-purple: hsl(259, 71%, 47%);
     --color-light-red: hsl(0, 100%, 67%);
 
     /*Segundary*/
@@ -39,7 +40,100 @@ body {
     align-items: center;
     justify-content: center;
 
+    font-family: "Poppins", sans-serif;
     background: var(--color-off-white);
     color: var(--color-off-black);
 }
 
+.container {
+    width: 50rem;
+    padding: 3rem;
+    border-radius: 1.5rem 1.5rem 8rem;
+    background: var(--color-white);
+}
+
+.container-inputs {
+    display: flex;
+    gap: 2rem;
+    color: var(--color-smokey-grey);
+    border-bottom: 0.1rem solid var(--color-light-grey);
+    position: relative;
+}
+
+
+.container-inputs .form{
+    margin-bottom: 3rem;
+}
+
+.container-inputs label{
+    display: block;
+
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.container-inputs input {
+    max-width: 10rem;
+    
+    font-size: 2rem;
+    font-weight: 800;
+    
+    border: 1px solid var(--color-light-grey);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.container-inputs input::placeholder {
+    color: var(--color-smokey-grey);
+}
+
+.container-inputs input:focus {
+    outline: 0.1rem solid var(--color-smokey-grey);
+}
+
+.container-inputs .msg-error {
+    font-size: 0.9rem;
+}
+
+.btn-img{
+    width: 3rem;
+    height: 3rem;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background: var(--color-purple);
+    position: absolute;
+    bottom: -2.5rem;
+    right: 0;
+    cursor: pointer;
+}
+
+.btn-img img {
+    width: 2.5rem;
+}
+
+.btn-img:hover {
+    background: var(--color-dark-purple);
+}
+
+.resultados {
+    margin: 4rem 0 2rem;
+}
+
+.resultados p{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 6.4rem;
+    margin: -2.5rem 0;
+}
+
+.resultados span {
+    color: var(--color-purple);
+}
