@@ -36,6 +36,18 @@ html {
     display: none;
 }
 
+.form .color-error {
+    color: var(--color-light-red);
+}
+
+.form .year-error-input {
+    border-color: var(--color-light-red);
+}
+
+.form .year-error-input:focus {
+    outline: none;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -67,7 +79,6 @@ body {
     position: relative;
 }
 
-
 .container-inputs .form{
     margin-bottom: 2.5rem;
 }
@@ -81,6 +92,11 @@ body {
     letter-spacing: 0.2rem;
 }
 
+.container-inputs .form .border-error {
+    border-color: var(--color-light-red);
+    outline: none;
+}
+
 .container-inputs input {
     width: 100%;
     max-width: 10rem;
@@ -89,7 +105,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
     
-    border: 1px solid var(--color-light-grey);
+    border: 0.1rem solid var(--color-light-grey);    
     border-radius: 0.5rem;
     outline: none;
     padding: 1rem;
@@ -101,11 +117,13 @@ body {
 }
 
 .container-inputs input:focus {
-    outline: 0.1rem solid var(--color-smokey-grey);
+    outline: 0.1rem solid var(--color-purple);
 }
 
 .container-inputs .msg-error {
     font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-light-red);
 }
 
 .btn-img{
@@ -124,12 +142,12 @@ body {
     cursor: pointer;
 }
 
-.btn-img img {
-    width: 2.5rem;
+.btn-img:hover {
+    background: var(--color-off-black);
 }
 
-.btn-img:hover {
-    background: var(--color-dark-purple);
+.btn-img img {
+    width: 2.5rem;
 }
 
 .resultados {
